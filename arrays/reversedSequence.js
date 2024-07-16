@@ -13,3 +13,6 @@ const reverseSeq = n => {
 const reverseSeq1 = n => {
     return Array(n).fill(0).map((e, i) => n - i );
   };
+
+
+const reverseSeq2 = n => Array.from({ length: n }, (_, i) => n - i);
