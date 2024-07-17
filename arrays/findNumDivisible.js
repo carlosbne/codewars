@@ -6,4 +6,4 @@ function divisibleBy(numbers, divisor){
 
 // -------- codewars ----------
 
-const divisibleBy = (numbers, divisor) => numbers.filter(number => !(number % divisor));
+const divisibleBy = (numbers, divisor) =>  numbers.filter(number => !(number % divisor));
