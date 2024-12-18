@@ -12,3 +12,12 @@ function contador(x){
         return 1;
     }
 }
+
+function alertVidro(count){
+    if(count >= 10){
+        alert('vidro');
+    }
+    else{
+        return 1;
+    }
+}
