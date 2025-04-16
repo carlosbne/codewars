@@ -21,3 +21,8 @@ function alertVidro(count){
         return 1;
     }
 }
+
+function alertHorse(count){
+    count += 1;
+    return count;
+}
