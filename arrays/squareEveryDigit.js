@@ -6,7 +6,7 @@ function squareDigits(num){
   return Number(squaredDigits);
 }
 
-//// ------------- best
+//// ------------- best ------------- 
 function squareDigits(num){
   return +num.toString().split('').map(i => i*i).join('');
 }
