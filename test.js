@@ -1,4 +1,4 @@
-let cidades = ["Natal", "Parnamirim", "Santo antonio", "São Paulo do Potengi"];
+let cidades = ["Natal", "Parnamirim", "Caíco", "Santo antonio", "São Paulo do Potengi"];
 
 if(cidades.length > 0 && cidades[1].charAt(0) == "P"){
     console.log("A cidade começa com a letra P");
@@ -29,4 +29,15 @@ console.log(cidadeTamanho);
 
 removeCidade("Parnamirim")
 
+console.log(cidades);
+
+
+const atualizaCidade = (cidadeAntiga, cidadeNova) => {
+    let index = cidades.indexOf(cidadeAntiga);
+    if(index > -1){
+        cidades[index] = cidadeNova;
+    }
+}
+
+atualizaCidade("Caíco", "Santa Cruz"); 
 console.log(cidades);
