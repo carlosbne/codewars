@@ -50,3 +50,8 @@ console.log(cidades);
 cidades.forEach(function(cidade, index){
     console.log(`A cidade ${cidade} está na posição ${index}`);
 });
+
+object.keys(cidades).forEach(function(key){
+    console.log(`A cidade ${cidades[key]} está na posição ${key}`);
+});
+
