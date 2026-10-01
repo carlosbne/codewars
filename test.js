@@ -41,3 +41,12 @@ const atualizaCidade = (cidadeAntiga, cidadeNova) => {
 
 atualizaCidade("Caíco", "Santa Cruz"); 
 console.log(cidades);
+
+
+atualizaCidade("Natal", "Mossoró");
+console.log(cidades);
+
+
+cidades.forEach(function(cidade, index){
+    console.log(`A cidade ${cidade} está na posição ${index}`);
+});
