@@ -51,7 +51,11 @@ cidades.forEach(function(cidade, index){
     console.log(`A cidade ${cidade} está na posição ${index}`);
 });
 
-object.keys(cidades).forEach(function(key){
+Object.keys(cidades).forEach(function(key){
     console.log(`A cidade ${cidades[key]} está na posição ${key}`);
 });
 
+
+cidades.filter(function(cidade){
+    return cidade.length > 10 && cidade.charAt(0) == "S";
+})
