@@ -59,3 +59,14 @@ Object.keys(cidades).forEach(function(key){
 cidades.filter(function(cidade){
     return cidade.length > 10 && cidade.charAt(0) == "S";
 })
+
+var cidadesAoContrario = cidades.reverse();
+console.log(cidadesAoContrario);
+
+var cidadesAoContrario2 = function(cidades){
+    let cidadesReversas = [];
+    for(let i = cidades.length - 1; i>= 0; i--){
+        cidadesReversas.push(cidades[i]);
+    }
+    return cidadesReversas;
+};
