@@ -70,3 +70,16 @@ var cidadesAoContrario2 = function(cidades){
     }
     return cidadesReversas;
 };
+
+
+function cidadesReverseridas(cidades){
+    let trocadasA = [];
+    let trocadasB = [];
+    for (let i = 0; i < cidades.length; i++){
+        trocadasA.push(cidades[i]);
+    }
+    for (let i = trocadasA.length - 1; i >= 0; i--){
+        trocadasB.push(trocadasA[i]);
+    }
+    return trocadasB;
+}       
