@@ -83,3 +83,16 @@ function cidadesReverseridas(cidades){
     }
     return trocadasB;
 }       
+
+
+const ADD_CIDADE = (cidade) => {
+    for(let i = 0; i < cidades.length; i++){
+        if(cidades[i] == cidade){
+            console.log("Cidade já existe");
+            return;
+        }else{
+            cidades.push(cidade);
+            console.log("Cidade adicionada com sucesso");
+            return;
+        }
+}
