@@ -86,13 +86,24 @@ function cidadesReverseridas(cidades){
 
 
 const ADD_CIDADE = (cidade) => {
-    for(let i = 0; i < cidades.length; i++){
-        if(cidades[i] == cidade){
+    for (let i = 0; i < cidades.length; i++) {
+        if (cidades[i] == cidade) {
             console.log("Cidade já existe");
             return;
-        }else{
-            cidades.push(cidade);
-            console.log("Cidade adicionada com sucesso");
+        }
+    }
+
+    cidades.push(cidade);
+    console.log("Cidade adicionada com sucesso");
+};
+
+const AVENIDA_CIDADE = (cidade) => {
+    for (let i = 0; i < cidades.length; i++) {
+        if (cidades[i] == cidade) {
+            cidades.splice(i, 1);
+            console.log("Cidade removida com sucesso");
             return;
         }
-}
+    }
+    console.log("Cidade não encontrada");
+};
