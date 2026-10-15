@@ -107,3 +107,17 @@ const AVENIDA_CIDADE = (cidade) => {
     }
     console.log("Cidade não encontrada");
 };
+
+
+
+async function getCidades() {
+    try{
+        const response = await fetch('https://api.example.com/cidades');
+        const data = await response.json();
+        cidades = data.cidades;
+        console.log("Cidades atualizadas com sucesso");
+    } catch (error){
+        console.error("Error ao buscar cidades:", error);
+    }   
+} 
+
